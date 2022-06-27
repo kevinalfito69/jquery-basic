@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+</head>
+<style>
+    #kotak{
+        background-color: yellowgreen;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        display: none;
+        position: absolutes;
+    }
+</style>
+<body>
+    <button id="gerak">
+        Gerak
+    </button>
+    <div id="kotak">
+
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                var kotak = $('#kotak');
+                kotak.animate({height:'toggle',width:'toggle'}, 1000);
+                // kotak.animate({height:'+=100px',width:'+=100px', backgroundColor:'rgba(0, 0, 0, 0)'}, 500); 
+            });
+        });
+    </script>
+</body>
+</html>

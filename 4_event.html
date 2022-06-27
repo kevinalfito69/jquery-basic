@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 3</title>
+</head>
+<body>
+     <h1 id="judul">Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, repudiandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, repudiandae.</p>
+        <button>Hide</button>
+        <button>Hide</button>
+        <button>Hide</button>
+        
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').dblclick(function(){
+                // * berfungsi menyeleksi seluruh document terkait atau bernilai sama
+                // $('*p').hide();
+                
+                // this berfungsi untuk menyeleksi sendiri
+                // $(this).hide();
+                
+                // Berfunsi untuk menyeleksi seluruh element button
+                $(":button").hide()
+            })
+        })
+    </script>
+</body>
+</html>

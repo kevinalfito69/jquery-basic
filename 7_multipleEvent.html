@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseEnter</title>
+</head>
+<body>
+    <h2 id="judul">Judul</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button>spoiler</button>
+    <script src="./jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+           
+            $('button').on({
+                mousedown:()=>{
+                    $('p').show(100)
+                    $('p').css('background-color','#ddd')
+                    $('button').text('hide')
+
+                },
+                mouseup:()=>{
+                    $('p').hide(400)
+                    $('button').text('show')
+                },
+                click:()=>{
+                    $('h2').css('color','red')
+                }
+                
+            })
+        })
+    </script>
+</body>
+</html>
+

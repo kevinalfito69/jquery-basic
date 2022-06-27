@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadein</title>
+</head>
+<style>
+    div{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: red;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100;
+        height: 100;
+        margin: 10px;
+        border-radius: 10px;
+        
+    }
+</style>
+<body>
+    <h2 id="judul">Click me ⬇️⬇️</h2>
+    <div id="box1"><h1>Aku</h1></div>
+    <div id="box2"><h2>Sayang</h2></div>
+    <div id="box3"><h3>Lily</h3></div>
+    <div id="box4"><h4>Cantik</h4></div>
+    <button>Toggle</button>
+    <script src="./jquery.min.js"></script>
+    <script>
+       $(document).ready(()=>{
+       
+         $('button').click(()=>{
+            $('#box1').fadeToggle();
+            $('#box2').fadeToggle(1000);
+            $('#box3').fadeToggle(2000);
+            $('#box4').fadeToggle(3000);
+        })
+       })
+    </script>
+</body>
+</html>
+
