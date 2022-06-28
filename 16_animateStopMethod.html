@@ -11,13 +11,16 @@
         border-radius: 10px;
         width: 100px;
         height: 100px;
-        display: none;
-        position: absolutes;
+       
+        position: relative;
     }
 </style>
 <body>
     <button id="gerak">
         Gerak
+    </button>
+    <button id="stop">
+        stop
     </button>
     <div id="kotak">
 
@@ -25,9 +28,14 @@
     <script src="./jquery.min.js"></script>
     <script>
         $(document).ready(()=>{
-            $('button').click(()=>{
+            $('#gerak').click(()=>{
                 var kotak = $('#kotak');
-                kotak.animate({height:'toggle',width:'toggle'}, 1000);
+                kotak.animate({left:'800px'}, 2000);
+                // kotak.animate({height:'+=100px',width:'+=100px', backgroundColor:'rgba(0, 0, 0, 0)'}, 500); 
+            });
+             $('#stop').click(()=>{
+                 var kotak = $('#kotak');
+                kotak.stop();
                 // kotak.animate({height:'+=100px',width:'+=100px', backgroundColor:'rgba(0, 0, 0, 0)'}, 500); 
             });
         });

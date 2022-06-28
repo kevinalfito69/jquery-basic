@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callBackFunction</title>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+</head>
+<style>
+    #kotak{
+        
+      
+        border-radius: 10px;
+        display: none;
+       font-size: 4em;
+        position: relative;
+        cursor: pointer;
+    }
+    .h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+</style>
+<body>
+    <button id="hide">
+        Hide
+    </button>
+    
+    
+    <div id="kotak">
+        ❤️
+    </div>
+    <div class="h2">
+        <h2>Kevin</h2>
+        <br>
+        <h2>Lily</h2>
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            
+            $('#hide').click(()=>{
+                $('#kotak').toggle(400)
+             .draggable();
+            })
+         
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

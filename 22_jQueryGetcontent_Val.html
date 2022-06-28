@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content</title>
+</head>
+
+<body>
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" id="nama">
+    <button id="button1">Show text</button>
+    <script src="./jquery.min.js"></script>
+    <script>
+        const button1 = $('#button1');
+       
+        $(document).ready(()=>{
+            button1.click(()=>{
+                alert(`nama saya adalah ${$('#nama').val()}`)
+            })
+          
+        })
+    </script>
+</body>
+</html>

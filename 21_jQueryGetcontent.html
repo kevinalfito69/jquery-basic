@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content</title>
+</head>
+<body>
+    <div id="line">
+        this is a<i>sample</i>line of  <b>Text</b>
+    </div>
+    <button id="button1">Show text</button>
+    <button id="button2">Show HTML</button>
+    <script src="./jquery.min.js"></script>
+    <script>
+        const button1 = $('#button1');
+        const button2 = $('#button2');
+        $(document).ready(()=>{
+            button1.click(()=>{
+                alert($('#line').text())
+            })
+            button2.click(()=>{
+                alert($('#line').html())
+            })
+        })
+    </script>
+</body>
+</html>

@@ -11,7 +11,7 @@
         border-radius: 10px;
         width: 100px;
         height: 100px;
-        display: none;
+        margin: auto;
         position: absolutes;
     }
 </style>
@@ -27,7 +27,7 @@
         $(document).ready(()=>{
             $('button').click(()=>{
                 var kotak = $('#kotak');
-                kotak.animate({height:'toggle',width:'toggle'}, 1000);
+                kotak.animate({ left:'+=800px', height:'toggle',width:'toggle'}, 1000);
                 // kotak.animate({height:'+=100px',width:'+=100px', backgroundColor:'rgba(0, 0, 0, 0)'}, 500); 
             });
         });
