@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content</title>
+</head>
+
+<body>
+
+<p>Lorem ipsum dolor sit amet.</p>
+<br>
+<button id="button1">Before</button>
+<button id="button2">After</button>
+
+<h2>Todo</h2>
+<ol id="todo">
+
+</ol>
+    <script src="./jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(()=>{
+            const button1 = $('#button1');
+            const button2 = $('#button2');
+            
+            button1.click(()=>{
+                const addJudul = $('#add-judul').val();
+                $('p').before(`<b>Before </b>`)
+                
+            })
+              button2.click(()=>{
+                const addTodo = $('#add-todo').val();
+
+                 $('p').after(`<b>After </b>`)
+                
+            })
+        
+        })
+    </script>
+</body>
+</html>

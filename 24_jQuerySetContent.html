@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content</title>
+</head>
+
+<body>
+    <h2>Todo</h2>
+    <p id="todo">
+
+    </p>
+    <input type="text" id="add-todo">
+    <button id="button1">add</button>
+    <script src="./jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(()=>{
+            const button1 = $('#button1');
+            button1.click(()=>{
+                const addTodo = $('#add-todo').val();
+                $('#todo').html(`<p>${addTodo}</p>`)
+                
+            })
+            
+        })
+    </script>
+</body>
+</html>

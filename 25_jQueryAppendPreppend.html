@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Content</title>
+</head>
+
+<body>
+</br>
+<label for="judul">Judul</label>
+<input type="text" id="add-judul">
+<button id="button1">add Judul</button>
+<br>
+<br>
+<label for="todo">Todo</label>
+<input type="text" name="todo" id="add-todo">
+<button id="button2">add</button>
+<button id="button3">Reset</button>
+<h2>Todo</h2>
+<ol id="todo">
+
+</ol>
+    <script src="./jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(()=>{
+            const button1 = $('#button1');
+            const button2 = $('#button2');
+            const button3 = $('#button3');
+            
+            button1.click(()=>{
+                const addJudul = $('#add-judul').val();
+                $('h2').html(`<p>${addJudul}</p>`)
+                
+            })
+              button2.click(()=>{
+                const addTodo = $('#add-todo').val();
+                // prepend berfungsi menambahkan item dari awal
+                // $('#todo').prepend(`<li>${addTodo}</li>`)
+                $('#todo').prepend(`<li>${addTodo}</li>`)
+            })
+             button3.click(()=>{
+                // empety mengosongkan seluruh isi dari parrent
+                $('li').remove();
+              })
+        })
+    </script>
+</body>
+</html>
